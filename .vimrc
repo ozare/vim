@@ -10,15 +10,16 @@ call plug#begin()
 " Make sure you use single quotes
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-
+Plug 'preservim/nerdtree'
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
-" You can revert the settings after the call like so:
-"   filetype indent off   " Disable file-type-specific indentation
-"   syntax off            " Disable syntax highlighting
+
 syntax on
 set wildmenu
 set wildmode=list:longest,full
 set re=0
 set clipboard=unnamed
+set number
+
+let g:NERDTreeWinSize=60
