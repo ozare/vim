@@ -21,5 +21,6 @@ set wildmode=list:longest,full
 set re=0
 set clipboard=unnamed
 set number
+set backspace=indent,eol,start
 
 let g:NERDTreeWinSize=60
