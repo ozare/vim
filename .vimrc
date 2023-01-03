@@ -24,6 +24,7 @@ set number
 set backspace=indent,eol,start
 
 let g:NERDTreeWinSize=45
+let NERDTreeShowHidden=1
 
 autocmd VimEnter * if !argc() | NERDTree | endif
 autocmd VimEnter * wincmd p
